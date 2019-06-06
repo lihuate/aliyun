@@ -1,0 +1,36 @@
+dd.sh  1 设置 用户配置$1  模式$2  端口$3
+
+unmode1  unmode2  unmode3
+import subprocess
+def subprocess_cmd(command):
+    process = subprocess.Popen(command,stdout=subprocess.PIPE, shell=True)
+    proc_stdout = process.communicate()[0].strip()
+    print proc_stdout
+subprocess_cmd('echo leehao.me; echo www.leehao.me')
+
+vim  u 撤销
+vim /  搜索   n  下一个匹配
+vim dd  删除光标所在一整行
+vim yy  复制一整行
+            data =str(process.communicate()[0].strip())
+
+os.killpg(process .pid, signal.SIGKILL)
+
+Linux查看端口、进程情况及kill进程
+看端口：
+
+ps -aux | grep tomcat
+
+发现并没有8080端口的Tomcat进程。
+
+使用命令：netstat –apn
+
+查看所有的进程和端口使用情况。发现下面的进程列表，其中最后一栏是PID/Program name 
+
+websock
+
+https://www.jianshu.com/p/8e582146bd4c
+
+linux shell 根据进程名获取pid
+ps -ef | grep "name" | grep -v grep | awk '{print $2}'
+https://blog.csdn.net/baidu_33850454/article/details/78568392
