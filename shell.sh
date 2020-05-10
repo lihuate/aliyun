@@ -1,4 +1,3 @@
-#!/bin/bash
 iptables -F
 iptables -I OUTPUT -d 153.3.149.61 -j DROP
 iptables -I INPUT -s 153.3.149.61 -j DROP
